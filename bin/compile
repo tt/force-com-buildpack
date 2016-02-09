@@ -22,7 +22,7 @@ echo "FORCE_COM_PROTOTYPE_API_URL: $FORCE_COM_PROTOTYPE_API_URL"
 echo "FORCE_COM_PROTOTYPE_USERNAME: $FORCE_COM_PROTOTYPE_USERNAME"
 
 echo "pip install simple-salesforce"
-pip install simple-salesforce
+pip install simple-salesforce || exit 1
 
 BUILD_TOOL_URL=https://github.com/forcedotcom/force-com-buildpack/releases/download/1.0.0-SNAPSHOT/driver-prototype.jar
 BUILD_TOOL_DEST=$BUILD_DIR/build
