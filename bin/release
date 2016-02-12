@@ -1,6 +1,6 @@
 #!/bin/sh
 cat << EOF
 ---
-addons:
-  - force-com-prototype
+default_process_types:
+  web: java -cp lib/$SFDC_DRIVER TestRunner
 EOF
