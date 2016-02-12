@@ -32,7 +32,7 @@ mkdir -p $BUILD_TOOL_DEST
 wget $BUILD_TOOL_URL -O $BUILD_TOOL_JAR
 
 mkdir -p $BUILD_DIR/lib
-export SFDC_DRIVER=$BUILD_DIR/lib/force-com-driver.jar
+SFDC_DRIVER=$BUILD_DIR/lib/force-com-driver.jar
 cp $BUILD_TOOL_JAR $SFDC_DRIVER
 
 java -jar $BUILD_TOOL_JAR

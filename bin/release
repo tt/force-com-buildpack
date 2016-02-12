@@ -2,5 +2,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: java -cp lib/$SFDC_DRIVER TestRunner
+  web: java -cp lib/force-com-driver.jar TestRunner
 EOF
